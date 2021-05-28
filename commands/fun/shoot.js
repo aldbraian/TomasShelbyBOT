@@ -1,10 +1,13 @@
-const { shootGameRandom } = require('../sort.js');
+const { shootGameRandom } = require('../../sort.js');
 
 module.exports = {
 	name: 'shoot',
 	description: 'shoot someone',
-	execute(message, args) {
-		console.log(args);
+	args: false,
+	guildOnly: true,
+	usage: '<user>',
+	cooldown: 5,
+	execute(message) {
 		if (!message.mentions.users.size) {
 			return message.reply('You need to tag a user in order to shoot them');
 		}
