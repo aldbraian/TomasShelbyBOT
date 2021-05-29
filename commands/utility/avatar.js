@@ -1,6 +1,7 @@
 module.exports = {
 	name: 'avatar',
 	description: 'Display avatar',
+	aliases: ['icon', 'pfp'],
 	args: false,
 	usage: 'empty equals your user or you can write an <user/s>',
 	cooldown: 5,
